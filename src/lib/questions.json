@@ -1,0 +1,528 @@
+{
+  "questions": [
+    {
+      "id": "fab8b54c-cbcf-4867-b9af-eea40e0537e0",
+      "val": "What project are you most proud of and why?"
+    },
+    {
+      "id": "9a37b8e7-0c53-4c3e-8756-c6e13d8aa984",
+      "val": "Tell me about a recent day working that was really great and/or fun."
+    },
+    {
+      "id": "8fbf86c9-0e39-432a-a699-f96fd1d79b09",
+      "val": "Tell me about a time when you wanted to change something that was outside of your regular scope of work."
+    },
+    {
+      "id": "2d94d3f6-1311-4688-84da-1290cfd6ba2a",
+      "val": "Tell me about a time you had to make a fast decision and live with the results."
+    },
+    {
+      "id": "9407079a-6dc7-4908-9590-5865c3a13f66",
+      "val": "How do you decide what to work on next?"
+    },
+    {
+      "id": "418a6acb-79c2-4b28-a50c-8ebb006ba5e8",
+      "val": "Tell me about a project or task that was ambiguous or underspecified."
+    },
+    {
+      "id": "8d3d1c7c-d1be-45f7-a233-8b5e76946843",
+      "val": "Tell me about a time when you needed to overcome external obstacles to complete a task or project."
+    },
+    {
+      "id": "d1a68caa-0e3f-4dea-b190-5154e20bae68",
+      "val": "Tell me about a time a project took longer as expected"
+    },
+    {
+      "id": "19efa865-4b84-4514-b92d-56597625a48b",
+      "val": "Tell me about a person or team who you found the most challenging to work with."
+    },
+    {
+      "id": "ae4d884a-9b61-40bf-a636-c641a840400d",
+      "val": "Tell me about a time you disagreed with a coworker."
+    },
+    {
+      "id": "7183b9e2-12a4-4dd1-8bfd-685314ea93dd",
+      "val": "Tell me about a situation where two teams couldn\u00e2\u20ac\u2122t agree on a path forward."
+    },
+    {
+      "id": "f9dbc037-bd09-4a17-82bb-bf0e19fd08d3",
+      "val": "Describe a situation when you made a mistake, and what you learned from it."
+    },
+    {
+      "id": "2efa9a94-32c8-4939-a71c-515265cb5045",
+      "val": "Tell me about some constructive feedback you received from a manager or a peer"
+    },
+    {
+      "id": "37a0dca8-083b-4b40-9c30-e4059a11e275",
+      "val": "Tell me about a skill set that you observed in a peer or mentor that you want to develop in the next six months."
+    },
+    {
+      "id": "905c8a22-6ba4-49c1-b919-d7a83025bb8d",
+      "val": "Why do you want to work for X company?"
+    },
+    {
+      "id": "0d83e992-c54e-448d-9d98-24a2e99dddb0",
+      "val": "Why do you want to leave your current/last company?"
+    },
+    {
+      "id": "4cbe2353-2dcf-4630-bc03-cce4a2aa6bc1",
+      "val": "What are you looking for in your next role?"
+    },
+    {
+      "id": "a6fd642c-c5a9-4ca7-bada-24695cc84d34",
+      "val": "Tell me about a time when you had a conflict with a co-worker."
+    },
+    {
+      "id": "cda4a7f9-41a6-4a72-86cb-20ac110ca95d",
+      "val": "Tell me about a time in which you had a conflict and needed to influence somebody else."
+    },
+    {
+      "id": "48baa21d-3b50-4f9e-ab41-1ec0303ea259",
+      "val": "What project are you currently working on?"
+    },
+    {
+      "id": "08ab86e5-0b54-4c62-9a63-fe84b1e4c31c",
+      "val": "What is the most challenging aspect of your current project?"
+    },
+    {
+      "id": "b5724039-9c48-4080-9ba0-76491fc80575",
+      "val": "What was the most difficult bug that you fixed in the past 6 months?"
+    },
+    {
+      "id": "0f07460d-62e8-4faf-9daf-94420e579053",
+      "val": "How do you tackle challenges? Name a difficult challenge you faced while working on a project, how you overcame it, and what you learned."
+    },
+    {
+      "id": "a06c42ad-d54b-461c-8931-14b761d530dc",
+      "val": "What are you excited about?"
+    },
+    {
+      "id": "79f857e9-c4a0-48ac-a919-3ec510b1e51e",
+      "val": "What frustrates you?"
+    },
+    {
+      "id": "8685d374-4b9c-4ac4-9dd8-304ef1254044",
+      "val": "Imagine it is your first day here at the company. What do you want to work on? What features would you improve on?"
+    },
+    {
+      "id": "9c34f6bb-c540-4385-9454-37e59788890e",
+      "val": "What are the most interesting projects you have worked on and how might they be relevant to this company's environment?"
+    },
+    {
+      "id": "9eed402c-2901-4604-b7e9-d8f203143592",
+      "val": "Tell me about a time you had a disagreement with your manager."
+    },
+    {
+      "id": "d32781af-ccdc-4427-80bd-aa958090a766",
+      "val": "Talk about a project you are most passionate about, or one where you did your best work."
+    },
+    {
+      "id": "9816cc9d-0107-4531-a247-040016ba46a1",
+      "val": "What does your best day of work look like?"
+    },
+    {
+      "id": "f656bba2-79eb-456b-abd8-13f21feef257",
+      "val": "What is something that you had to push for in your previous projects?"
+    },
+    {
+      "id": "0bab118c-9f16-4974-b089-a482d13a9856",
+      "val": "What is the most constructive feedback you have received in your career?"
+    },
+    {
+      "id": "ac4e2a93-cffa-4881-b2c1-f0b503fe2a6e",
+      "val": "What is something you had to persevere at for multiple months?"
+    },
+    {
+      "id": "faf81714-b598-4e0f-85c0-8c1fe35ae3fb",
+      "val": "Tell me about a time you met a tight deadline."
+    },
+    {
+      "id": "6ac1f0e1-429b-4fd3-874d-cd570e657d0e",
+      "val": "If this were your first annual review with our company, what would I be telling you right now?"
+    },
+    {
+      "id": "9def707f-a220-4b73-9f88-ff6fb49b14b6",
+      "val": "Time management has become a necessary factor in productivity. Give an example of a time-management skill you've learned and applied at work."
+    },
+    {
+      "id": "0d849bc8-d13c-483f-ac84-77155e75938a",
+      "val": "Tell me about a problem you've had getting along with a work associate."
+    },
+    {
+      "id": "1449869e-3338-462e-878f-3fda62136c93",
+      "val": "What aspects of your work are most often criticized?"
+    },
+    {
+      "id": "3c56aef9-2cf7-4308-bfbd-3330c4bf663b",
+      "val": "How have you handled criticism of your work?"
+    },
+    {
+      "id": "ce300296-ccf9-4d1e-919b-720adf4f8dae",
+      "val": "What strengths do you think are most important for your job position?"
+    },
+    {
+      "id": "16b74e27-cd35-447d-ab6c-0a31fb513ddf",
+      "val": "What words would your colleagues use to describe you?"
+    },
+    {
+      "id": "b8552ca6-b323-46b6-8a81-f19b988e19c7",
+      "val": "What would you hope to achieve in the first six months after being hired?"
+    },
+    {
+      "id": "8d8a639a-8d87-4c3b-aaf0-fab0afdf1615",
+      "val": "Tell me why you will be a good fit for the position."
+    },
+    {
+      "id": "ff47839b-b4d1-4ebc-926f-4fc9aca589ae",
+      "val": "What does \"belong anywhere\" mean to you?"
+    },
+    {
+      "id": "c63e74a3-cb74-42b9-aaf3-ed35110b1069",
+      "val": "What large problems in the world would you solve today?"
+    },
+    {
+      "id": "990f7c76-d0e6-430f-9259-4a4752eaa8b4",
+      "val": "Why do you like Airbnb?"
+    },
+    {
+      "id": "d6347002-8ce6-4fcd-bd28-75be5c954786",
+      "val": "If you had an unlimited budget and you could buy one gift for one person, what would you buy and who would you buy it for?"
+    },
+    {
+      "id": "7313a08d-704a-4e61-81d3-2ac9fe64b814",
+      "val": "If you had an unlimited budget and you could go somewhere, where would you go?"
+    },
+    {
+      "id": "0fbbd95b-3488-4406-b980-fcb18d356b0f",
+      "val": "Share one of your trips with us."
+    },
+    {
+      "id": "b44dba6e-4879-480a-86f8-0c044953da2c",
+      "val": "What is the most challenging project in or out of school that you have worked on in the last 6 months."
+    },
+    {
+      "id": "082ad1f5-7358-40ca-b22a-317292fe84bd",
+      "val": "What is something that you don't want from your last internship/job?"
+    },
+    {
+      "id": "8ef07375-b086-4c97-a269-a1eb01f71c6d",
+      "val": "Give me an example of when you've been a good host."
+    },
+    {
+      "id": "3f78bc03-e63e-4b77-87c9-2a729e38b11f",
+      "val": "What's something you'd like to remove from the Airbnb experience?"
+    },
+    {
+      "id": "1f1e8c20-ac47-4ab1-8c4e-2cf79e8e1639",
+      "val": "What is something new that you can teach your interviewer in a few minutes?"
+    },
+    {
+      "id": "2d54362d-246a-4efd-a88b-bffd30d878b6",
+      "val": "Tell me about why you want to work here."
+    },
+    {
+      "id": "3afa0d2a-ac75-4d9a-b161-42a987c5e6de",
+      "val": "What is the best gift you have ever given or received?"
+    },
+    {
+      "id": "55059e3b-1091-4a15-b2ce-f93b9d17a33f",
+      "val": "Tell me about a time you were uncomfortable and how you dealt with it."
+    },
+    {
+      "id": "015b66aa-2233-42e9-a79e-dd5dda0ab585",
+      "val": "Explain a project that you worked on recently."
+    },
+    {
+      "id": "3fbff5a9-baee-4807-a873-113a1b396f0d",
+      "val": "What do you think of Airbnb?"
+    },
+    {
+      "id": "f12cdf3b-5433-4035-813e-03618fd348cc",
+      "val": "Tell me something about yourself and why you'd be a good fit for the position."
+    },
+    {
+      "id": "405ddab3-3957-41af-95d6-bcff8306ea68",
+      "val": "Name a situation where you were impressed by a company's customer service."
+    },
+    {
+      "id": "8658f073-32bf-4906-8e67-780e7f981e6f",
+      "val": "How did you work with senior management on large projects as well as multiple internal teams?"
+    },
+    {
+      "id": "8d98bc60-210e-4841-942d-06b65be53376",
+      "val": "Tell me about a time you had to give someone terrible news."
+    },
+    {
+      "id": "4d49d0ea-16f3-423e-b07e-05e1476f848f",
+      "val": "If you were a gerbil, which gerbil would you be?"
+    },
+    {
+      "id": "a724ae3f-8c11-4767-8170-f546e2f6e3bb",
+      "val": "What excites you about the company?"
+    },
+    {
+      "id": "6f2d52a7-6c9a-41c1-a0de-dfdc4e95c04f",
+      "val": "How does Airbnb impact our guests and hosts?"
+    },
+    {
+      "id": "eac6add3-7c5e-4866-be6f-f8ed0fdd796d",
+      "val": "What part of our mission resonates the most with you?"
+    },
+    {
+      "id": "b9c7fcde-eb09-4770-85be-00a9e9e508b8",
+      "val": "How do you deal with a failed deadline?"
+    },
+    {
+      "id": "a9be25d6-eb10-4a7e-b296-54bf06f24b69",
+      "val": "Why do you want to work for Amazon?"
+    },
+    {
+      "id": "705f615c-696f-4e83-b4b0-498b4bc30cb3",
+      "val": "Tell me about a situation where you had a conflict with a teammate."
+    },
+    {
+      "id": "e4a38f0e-f2f0-4bac-9c47-b4b3b10c8890",
+      "val": "In your professional experience have you worked on something without getting approval from your manager?"
+    },
+    {
+      "id": "223a486a-ae80-44bd-87b2-8ac30b3c5787",
+      "val": "Tell me a situation where you would have done something differently from what you actually did."
+    },
+    {
+      "id": "2737aa78-e69f-4830-8e09-6b1827b1c27e",
+      "val": "What is the most exceedingly bad misstep you've made at any point?"
+    },
+    {
+      "id": "5709228d-0430-4ae0-8f93-097844b7ec91",
+      "val": "Describe what Human Resources means to you."
+    },
+    {
+      "id": "4a261ce1-c628-480c-858d-5ccafb49efee",
+      "val": "How would you improve Amazon's website?"
+    },
+    {
+      "id": "b79ba60c-50f9-4a10-87d9-86e703b83b7d",
+      "val": "What do you know about <role> and why?"
+    },
+    {
+      "id": "89af3700-7784-478a-bffe-4848a058894a",
+      "val": "Take me through a product you launched from start to end"
+    },
+    {
+      "id": "3087b628-3008-460c-8283-a0881173102a",
+      "val": "What's the biggest achievement in your previous projects?"
+    },
+    {
+      "id": "4f511bce-9803-41e1-abd6-bf5dd18fc085",
+      "val": "Tell me about a recent failure and what you learned from the experience"
+    },
+    {
+      "id": "bca5fdb2-153b-4148-b5c7-9e94d6396e22",
+      "val": "Why do you want to work at ByteDance?"
+    },
+    {
+      "id": "76e56aa3-46da-4d85-9cd2-c1daf1af13bf",
+      "val": "What makes you a good fit for this position?"
+    },
+    {
+      "id": "02c47aec-371b-460f-9572-ecf7f318dca6",
+      "val": "What excites you about the role?"
+    },
+    {
+      "id": "f60eb16c-795f-4444-8b13-2fb636b80140",
+      "val": "Talk about your favorite project."
+    },
+    {
+      "id": "9cdfab39-11e0-45b9-8dc0-efaa647d2d6f",
+      "val": "If you were hired here what would you do?"
+    },
+    {
+      "id": "307e1ef1-bcea-44bc-af18-6bb14714a5c7",
+      "val": "State an experience about how you solved a technical problem. Be specific about the diagnosis and process."
+    },
+    {
+      "id": "50eb4c4d-7d6e-4cbe-8320-c56b91e7f633",
+      "val": "Tell me about yourself."
+    },
+    {
+      "id": "ff201af8-8801-4d67-a46e-14b0313ae668",
+      "val": "What is your biggest strength and area of growth?"
+    },
+    {
+      "id": "11d9e2ad-5bed-4958-bd69-b66e4cdc678d",
+      "val": "Why are you interested in this opportunity?"
+    },
+    {
+      "id": "2db80042-89ee-4694-a655-c6382ae660c2",
+      "val": "What are your salary expectations?"
+    },
+    {
+      "id": "659a36df-3192-4fc3-b957-33ace77e17a4",
+      "val": "Why are you looking to leave your current company?"
+    },
+    {
+      "id": "0aeee0ed-7ed3-4aa5-890c-daa4ca68c367",
+      "val": "Tell me about a time your work responsibilities got a little overwhelming. What did you do?"
+    },
+    {
+      "id": "62fcda10-0f5a-41de-9072-2fabbba2144a",
+      "val": "Give me an example of a time when you had a difference of opinion with a team member. How did you handle that?"
+    },
+    {
+      "id": "6a98f96f-648c-4cef-b2c5-4c962a3f0e69",
+      "val": "Tell me about a challenge you faced recently in your role. How did you tackle it? What was the outcome?"
+    },
+    {
+      "id": "688e3c54-f870-4207-b88a-8643bbead2b6",
+      "val": "Where do you want to be in five years?"
+    },
+    {
+      "id": "0d49d7e4-2329-4e3b-804f-bb52a941188e",
+      "val": "Tell me about a time you needed information from someone who wasn't responsive. What did you do?"
+    },
+    {
+      "id": "0ca99403-043c-4265-b138-3da8886363ee",
+      "val": "Tell me about your most interesting/challenging project to date."
+    },
+    {
+      "id": "5c0ea031-6c02-4557-9126-b45518cacbee",
+      "val": "Why Lyft? What are you looking for in the next role?"
+    },
+    {
+      "id": "cf36a975-a413-43f7-a004-1d4769ebd5d7",
+      "val": "What is something 90% of people disagree with you about?"
+    },
+    {
+      "id": "9b3c8c74-6f6f-4482-9a17-058a5a54abe8",
+      "val": "What is broken around you?"
+    },
+    {
+      "id": "0deedfbf-c6bb-40d0-8034-d48f673b7f90",
+      "val": "How do you deal with difficult coworkers? Think about specific instances where you resolved conflicts."
+    },
+    {
+      "id": "c390588d-c464-4ddc-bf3e-a19c06efce1a",
+      "val": "How did you win over the difficult employees?"
+    },
+    {
+      "id": "a42622a0-53ab-412b-9e36-bf90e8f0b879",
+      "val": "Tell me about an analytical problem that you have worked on in the past."
+    },
+    {
+      "id": "6657974e-4c4d-4f17-a0f8-0ea706575923",
+      "val": "What are your three strengths and three weaknesses?"
+    },
+    {
+      "id": "ca7b1213-6fb8-4db8-8135-bbc3e46aa5eb",
+      "val": "If you were in charge of picking projects for Palantir, what problem would you try to solve?"
+    },
+    {
+      "id": "3d67b3d3-9694-4a15-b155-9142aee36adb",
+      "val": "What are some of the best and worst things about your current company?"
+    },
+    {
+      "id": "1610adb4-3e9e-4ee3-8948-f0adf5d68c4c",
+      "val": "What would your manager say about you?"
+    },
+    {
+      "id": "e3bed445-6be5-473b-9762-8dec3f4c7ccd",
+      "val": "Describe Palantir to your grandmother."
+    },
+    {
+      "id": "2de8747f-bcf5-4ab3-be3f-59301c491783",
+      "val": "Teach me something you've learned."
+    },
+    {
+      "id": "5e87c29e-5560-4d48-a462-a897076b61bc",
+      "val": "Tell me a time when you predicted something."
+    },
+    {
+      "id": "3cdf0493-1982-4503-b43a-072764a068c5",
+      "val": "If your supervisors were to rate you on a scale of 1-10, what would they rate you?"
+    },
+    {
+      "id": "2c1fb5e4-7910-48e5-8806-4ebd321a30fd",
+      "val": "What was the most fun thing you did recently?"
+    },
+    {
+      "id": "3a316f8b-80ac-4979-a1a1-483d7ebb8184",
+      "val": "Tell me the story of how you became who you are today and what made you apply to Palantir."
+    },
+    {
+      "id": "6fffeef7-307a-4770-9642-a5c6ebb3245f",
+      "val": "Tell me something about your internship."
+    },
+    {
+      "id": "00a267ba-882d-4ca2-a876-7ef1021388d1",
+      "val": "Why do you want to join Slack?"
+    },
+    {
+      "id": "eb82a4a1-608c-4ef3-916e-741e6f801674",
+      "val": "Tell me about your past projects."
+    },
+    {
+      "id": "b5bd4bec-43c5-4efd-b055-94fe7f23f379",
+      "val": "Explain me your toughest project and the working architecture."
+    },
+    {
+      "id": "020f79b8-8659-4699-8354-47c62768fd9e",
+      "val": "Apart from technical knowledge, what did you learn during your internship?"
+    },
+    {
+      "id": "b56f1529-4350-4514-9678-9fbc3756861e",
+      "val": "If someone has a different viewpoint to do a project like different programming language, how would handle this situation?"
+    },
+    {
+      "id": "c6c8a61c-58ca-44b1-a132-22fef67607d1",
+      "val": "What are your most interesting subjects and why?"
+    },
+    {
+      "id": "02f0983f-de9a-484e-8353-88c31b8e8e71",
+      "val": "Did you find any bugs in Slack?"
+    },
+    {
+      "id": "6c24b3d3-f838-4216-92a0-9193cb30820c",
+      "val": "What is your favorite feature and why?"
+    },
+    {
+      "id": "31318c5d-e13c-46fd-91f0-2f3ed9e3502a",
+      "val": "What have you built?"
+    },
+    {
+      "id": "f5708f58-53c6-4484-9ada-3e578d714b85",
+      "val": "What is the hardest technical problem you have run into?"
+    },
+    {
+      "id": "cdb074ac-e5b0-4525-ac41-62734f2e9a34",
+      "val": "How did you solve it?"
+    },
+    {
+      "id": "fd74d423-c7f8-4c89-9d36-6a995e3ced34",
+      "val": "Where do you see yourself in 5 years?"
+    },
+    {
+      "id": "a448de55-3543-4911-b41f-21a5d1100c47",
+      "val": "Why do you want to work here?"
+    },
+    {
+      "id": "11194587-0f8a-47d5-93d2-2bba61e6a0d4",
+      "val": "How do you handle disagreements with co-workers?"
+    },
+    {
+      "id": "1f60fbe4-efdf-4849-9d20-87f05454997e",
+      "val": "How do you stay up to date with the latest technologies?"
+    },
+    {
+      "id": "e96fb1ce-7205-4a3b-8d65-4a08d3b6497d",
+      "val": "Explain a project that you worked on recently that was difficult."
+    },
+    {
+      "id": "11c3f4df-2b3b-46c0-a78b-9468ff025848",
+      "val": "Where do you see yourself in five years?"
+    },
+    {
+      "id": "bda5cdcc-6979-4065-92d1-ecd772e0ba05",
+      "val": "What would your previous boss say your biggest strength was?"
+    }
+  ]
+}
