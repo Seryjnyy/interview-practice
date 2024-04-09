@@ -23,6 +23,14 @@ import { useEffect, useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { v4 as uuidv4 } from "uuid";
+import { Badge } from "@/components/ui/badge";
+import {
+  deleteNote,
+  getNote,
+  getNotesForQuestion,
+  saveNoteForQuestion,
+  updateNote,
+} from "@/lib/noteServices";
 
 const Edit = ({
   val,
@@ -61,17 +69,13 @@ const CreateNote = ({
 
   // TODO : checks
   const handleSaveNote = () => {
-    const id = uuidv4();
-    localStorage.setItem(id, note);
+    // const id = uuidv4();
+    // localStorage.setItem(id, note);
 
-    const res = localStorage.getItem(`notes-for-id${questionID}`);
-    if (res) {
-      const arr = JSON.parse(res);
-      arr.push(id);
-      localStorage.setItem(`notes-for-id${questionID}`, JSON.stringify(arr));
-    } else {
-      localStorage.setItem(`notes-for-id${questionID}`, JSON.stringify([id]));
-    }
+    // const res = getNotesForQuestion(questionID)
+    // res.push(id)
+    // localStorage.setItem(`notes-for-id${questionID}`, JSON.stringify(res));
+    saveNoteForQuestion(questionID, note);
 
     setNote("");
     onSuccess();
@@ -85,23 +89,23 @@ const CreateNote = ({
   );
 };
 
-// Save to localstorage
-// Retrieve from localstorage
 const Note = ({
   id,
   onDeleteNote,
+  questionID,
 }: {
   id: string;
-  onDeleteNote: (noteID: string) => void;
+  questionID: string;
+  onDeleteNote: () => void;
 }) => {
   const [edit, setEdit] = useState(false);
   const [note, setNote] = useState("");
 
   useEffect(() => {
-    const res = localStorage.getItem(id);
+    const res = getNote(id);
 
     if (res) {
-      setNote(res);
+      setNote(res.val);
     }
   });
 
@@ -110,17 +114,18 @@ const Note = ({
   };
 
   const handleEditSave = (newVal: string) => {
-    localStorage.setItem(id, newVal);
+    updateNote(id, newVal);
 
-    const res = localStorage.getItem(id);
+    const res = getNote(id);
     if (res) {
-      setNote(res);
+      setNote(res.val);
     }
     setEdit(false);
   };
 
   const handleDelete = () => {
-    onDeleteNote(id);
+    deleteNote(questionID, id);
+    onDeleteNote();
   };
 
   return (
@@ -155,48 +160,40 @@ export default function NotesModal({
   triggerText: string;
   triggerVariant: "outline" | "ghost";
 }) {
-  const [notes, setNotes] = useState([]);
+  const [notes, setNotes] = useState<string[]>([]);
 
   useEffect(() => {
-    const res = localStorage.getItem(`notes-for-id${question.id}`);
-    if (res) {
-      const arr = JSON.parse(res);
-      setNotes(arr);
-    }
+    setNotes(getNotesForQuestion(question.id));
   }, []);
 
   const onCreateNote = () => {
-    const res = localStorage.getItem(`notes-for-id${question.id}`);
-    if (res) {
-      const arr = JSON.parse(res);
-      setNotes(arr);
-    }
+    setNotes(getNotesForQuestion(question.id));
   };
 
-  const onDeleteNote = (noteID: string) => {
-    localStorage.removeItem(noteID);
-
-    const res = localStorage.getItem(`notes-for-id${question.id}`);
-    if (res) {
-      const arr = JSON.parse(res);
-      const removed = arr.filter((x: any) => x != noteID);
-      localStorage.setItem(
-        `notes-for-id${question.id}`,
-        JSON.stringify(removed)
-      );
-      const updated = localStorage.getItem(`notes-for-id${question.id}`);
-      if (updated) {
-        setNotes(JSON.parse(updated));
-      }
-    }
+  const onDeleteNote = () => {
+    setNotes(getNotesForQuestion(question.id));
   };
 
   return (
     <Dialog>
       <DialogTrigger
-        className={cn(buttonVariants({ variant: triggerVariant }))}
+        className={cn(
+          "relative",
+          buttonVariants({ variant: triggerVariant }),
+          "pr-4"
+        )}
       >
         {triggerText}
+        {notes.length > 0 ? (
+          <Badge
+            variant="outline"
+            className="absolute top-0 right-0 p-[2px] rounded-sm backdrop-blur-sm"
+          >
+            {notes.length}
+          </Badge>
+        ) : (
+          <></>
+        )}
       </DialogTrigger>
       <DialogContent className="md:min-w-[70%] h-[98%] md:h-[65%] flex flex-col">
         <DialogHeader>
@@ -208,7 +205,12 @@ export default function NotesModal({
         <div>
           <Tabs defaultValue="view-notes">
             <TabsList>
-              <TabsTrigger value="view-notes">View notes</TabsTrigger>
+              <TabsTrigger value="view-notes" className="space-x-1">
+                <span>View notes</span>
+                <Badge variant="outline" className="p-[2px]">
+                  {notes.length}
+                </Badge>
+              </TabsTrigger>
               <TabsTrigger value="create-note">Create note</TabsTrigger>
             </TabsList>
             <TabsContent value="view-notes">
@@ -217,6 +219,7 @@ export default function NotesModal({
                   {notes.map((noteID) => (
                     <Note
                       id={noteID}
+                      questionID={question.id}
                       key={noteID}
                       onDeleteNote={onDeleteNote}
                     />
