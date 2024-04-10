@@ -1,3 +1,4 @@
+"use client";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import React from "react";
 import {
@@ -10,8 +11,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
 import { ModeToggle } from "./mode-toggle";
+import { useTheme } from "next-themes";
 
 export default function Navbar() {
+  const { setTheme, theme } = useTheme();
+
   return (
     <div className="fixed top-2 right-4 z-20">
       <DropdownMenu dir="ltr">
@@ -28,9 +32,22 @@ export default function Navbar() {
           <Link href={"/notes"}>
             <DropdownMenuItem>Notes</DropdownMenuItem>
           </Link>
-          <DropdownMenuItem>
-            <ModeToggle />
+          <DropdownMenuSeparator />
+          <DropdownMenuItem
+            className={theme == "light" ? "font-bold" : ""}
+            onClick={() => setTheme("light")}
+          >
+            Light mode
           </DropdownMenuItem>
+          <DropdownMenuItem
+            className={theme == "dark" ? "font-bold" : ""}
+            onClick={() => setTheme("dark")}
+          >
+            Dark mode
+          </DropdownMenuItem>
+          {/* <DropdownMenuItem>
+            <ModeToggle />
+          </DropdownMenuItem> */}
         </DropdownMenuContent>
       </DropdownMenu>
     </div>

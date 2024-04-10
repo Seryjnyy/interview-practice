@@ -15,7 +15,7 @@ export function getAllNotesWithQuestionID() {
   return res;
 }
 
-export function getNotesForQuestion(questionID: string) {
+export function getNoteIDsForQuestion(questionID: string) {
   const res = localStorage.getItem(`${QUESTION_NOTES_PREFIX}${questionID}`);
 
   if (res) {
@@ -61,7 +61,7 @@ function saveNote(questionID: string, note: string) {
   const id = uuidv4();
   localStorage.setItem(
     id,
-    JSON.stringify({ id: id, val: note, questionID: questionID })
+    JSON.stringify({ id: id, val: note.trim(), questionID: questionID })
   );
 
   addToNoteList(id);
@@ -71,7 +71,7 @@ function saveNote(questionID: string, note: string) {
 export function saveNoteForQuestion(questionID: string, note: string) {
   const noteID = saveNote(questionID, note);
 
-  const arr = getNotesForQuestion(questionID);
+  const arr = getNoteIDsForQuestion(questionID);
   arr.push(noteID);
   localStorage.setItem(
     `${QUESTION_NOTES_PREFIX}${questionID}`,
@@ -93,7 +93,7 @@ export function updateNote(noteID: string, newVal: string) {
 export function deleteNote(questionID: string, noteID: string) {
   localStorage.removeItem(noteID);
 
-  const notes = getNotesForQuestion(questionID);
+  const notes = getNoteIDsForQuestion(questionID);
   const removed = notes.filter((x: any) => x != noteID);
 
   removeFromNoteList(noteID);

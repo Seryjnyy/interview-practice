@@ -3,9 +3,17 @@ import { useEffect, useState } from "react";
 import questionList from "../lib/questions.json";
 import { Button } from "@/components/ui/button";
 import CountdownTimer from "./CountDownTimer";
-import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
+import {
+  ArrowLeftIcon,
+  ArrowRightIcon,
+  EyeClosedIcon,
+  EyeOpenIcon,
+} from "@radix-ui/react-icons";
 import NotesModal from "./NotesModal";
-import { getAllWantedQuestions } from "@/lib/questionService";
+import {
+  addToExclusionSet,
+  getAllWantedQuestions,
+} from "@/lib/questionService";
 
 // This can show how to find code to do things
 // This also shows how we can modify things
@@ -54,6 +62,12 @@ export default function Question() {
     setIndex(0);
   };
 
+  const handleHideQuestion = () => {
+    addToExclusionSet(questions[index].id);
+
+    setQuestions(getAllWantedQuestions());
+  };
+
   return (
     <div className="flex flex-col justify-around md:justify-center items-center w-full h-screen gap-24 px-2 md:px-8 relative">
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl w-fit  p-2 md:p-4 rounded-lg font-bold">
@@ -64,24 +78,29 @@ export default function Question() {
         <div className="py-2">
           <CountdownTimer amount={Date.now() + 120000} />
         </div>
-        <div className="space-x-2 border p-1">
-          <Button onClick={handlePrev} disabled={index <= 0}>
-            <ArrowLeftIcon />
-          </Button>
-          <Button onClick={handleNext} disabled={index >= questions.length}>
-            <ArrowRightIcon />
-          </Button>
-          <Button onClick={handleReshuffle}>Reshuffle</Button>
+        <div className="flex items-center gap-2">
+          <div className="space-x-2 border p-1">
+            <Button onClick={handlePrev} disabled={index <= 0}>
+              <ArrowLeftIcon />
+            </Button>
+            <Button onClick={handleNext} disabled={index >= questions.length}>
+              <ArrowRightIcon />
+            </Button>
+            <Button onClick={handleReshuffle}>Reshuffle</Button>
 
-          {questions[index] ? (
-            <NotesModal
-              question={questions[index]}
-              triggerText="Notes"
-              triggerVariant="outline"
-            />
-          ) : (
-            ""
-          )}
+            {questions[index] ? (
+              <NotesModal
+                question={questions[index]}
+                triggerText="Notes"
+                triggerVariant="outline"
+              />
+            ) : (
+              ""
+            )}
+          </div>
+          <Button variant={"ghost"} onClick={handleHideQuestion}>
+            Hide
+          </Button>
         </div>
         <span className="opacity-80 mt-2">{`${index + 1}/${
           questions.length

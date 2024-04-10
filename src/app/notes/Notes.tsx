@@ -2,6 +2,7 @@
 import { getAllNotesWithQuestionID } from "@/lib/noteServices";
 import { getAllQuestionsAsMap } from "@/lib/questionService";
 import React, { useEffect, useState } from "react";
+import Note from "../questions/Note";
 
 // https://stackoverflow.com/a/38327540/23556726
 const groupBy = <T, K extends keyof any>(arr: T[], key: (i: T) => K) =>
@@ -21,17 +22,32 @@ export default function Notes() {
     setQuestionMap(getAllQuestionsAsMap());
   }, []);
 
+  const onNoteDeleted = () => {
+    setNotes(getAllNotesWithQuestionID());
+    setQuestionMap(getAllQuestionsAsMap());
+  };
+
   const groups = groupBy(notes, (note) => note.questionID);
   console.log(Array.from(Object.entries(groups)));
+
+  // TODO : Wasteful note rendering because we already have the note data, but Note component re-fetches it
   return (
-    <div>
+    <div className="space-y-12 pt-16">
       {Array.from(Object.entries(groups)).map((group: any) => {
         return (
-          <div>
-            {questionMap.get(group[0])}
-            {group[1].map((note: any) => {
-              return <div key={note.id}>{note.val}</div>;
-            })}
+          <div key={"id" + group[0]}>
+            <h3 className="opacity-80 pb-1">{questionMap.get(group[0])}</h3>
+            <div className="space-y-4">
+              {group[1].map((note: any) => {
+                return (
+                  <Note
+                    id={note.id}
+                    onDeleteNote={onNoteDeleted}
+                    questionID={note.questionID}
+                  />
+                );
+              })}
+            </div>
           </div>
         );
       })}
