@@ -56,7 +56,7 @@ export default function NotesModal({
 
   useEffect(() => {
     setNotes(getNoteIDsForQuestion(question.id));
-  }, []);
+  }, [question.id]);
 
   const onCreateNote = () => {
     setNotes(getNoteIDsForQuestion(question.id));
@@ -111,6 +111,7 @@ export default function NotesModal({
                   {notes.map((noteID) => (
                     <Note
                       id={noteID}
+                      key={noteID}
                       questionID={question.id}
                       onDeleteNote={onDeleteNote}
                     />

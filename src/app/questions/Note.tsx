@@ -48,7 +48,7 @@ export default function Note({
     if (res) {
       setNote(res.val);
     }
-  });
+  }, [id]);
 
   const handleEditCancel = () => {
     setEdit(false);
@@ -70,7 +70,7 @@ export default function Note({
   };
 
   return (
-    <div className="border p-2 rounded-md relative group w-[98%]" key={id}>
+    <div className="border p-2 rounded-md relative group w-[98%]">
       {edit ? (
         <Edit val={note} onCancel={handleEditCancel} onSave={handleEditSave} />
       ) : (

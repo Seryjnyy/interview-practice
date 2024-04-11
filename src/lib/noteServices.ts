@@ -87,7 +87,13 @@ export function getNote(noteID: string) {
 }
 
 export function updateNote(noteID: string, newVal: string) {
-  localStorage.setItem(noteID, newVal);
+  const note = getNote(noteID);
+  if (!note) return;
+
+  localStorage.setItem(
+    noteID,
+    JSON.stringify({ id: noteID, val: newVal, questionID: note.questionID })
+  );
 }
 
 export function deleteNote(questionID: string, noteID: string) {

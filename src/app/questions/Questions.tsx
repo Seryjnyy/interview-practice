@@ -54,10 +54,7 @@ const Question = ({
   };
 
   return (
-    <div
-      key={question.id}
-      className="py-2 flex justify-between flex-col md:flex-row"
-    >
+    <div className="py-2 flex justify-between flex-col md:flex-row">
       <span className={cn({ "opacity-60": stopSeeingSet.has(question.id) })}>
         {question.val}
       </span>
@@ -167,6 +164,7 @@ export default function Questions() {
 
         return (
           <Question
+            key={question.id}
             question={question}
             stopSeeingSet={stopSeeingSet}
             onVisibilityChange={onVisibilityChange}

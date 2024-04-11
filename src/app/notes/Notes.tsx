@@ -42,6 +42,7 @@ export default function Notes() {
                 return (
                   <Note
                     id={note.id}
+                    key={note.id}
                     onDeleteNote={onNoteDeleted}
                     questionID={note.questionID}
                   />
