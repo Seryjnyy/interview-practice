@@ -2,7 +2,7 @@ import questionList from "../lib/questions.json";
 
 const EXCLUSION_LIST_PREFIX = "stop-seeing-list";
 
-function getOriginalQuestions() {
+export function getOriginalQuestions() {
   return questionList.questions;
 }
 

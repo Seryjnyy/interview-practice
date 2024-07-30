@@ -17,7 +17,7 @@ export default function Navbar() {
   const { setTheme, theme } = useTheme();
 
   return (
-    <div className="fixed top-2 right-4 z-20">
+    <nav className="fixed top-2 right-4 z-20">
       <DropdownMenu dir="ltr">
         <DropdownMenuTrigger className="opacity-80  w-8 h-8 flex justify-center items-center">
           <HamburgerMenuIcon className="opacity-70 w-6 h-6" />
@@ -50,6 +50,6 @@ export default function Navbar() {
           </DropdownMenuItem> */}
         </DropdownMenuContent>
       </DropdownMenu>
-    </div>
+    </nav>
   );
 }

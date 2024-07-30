@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 const QUESTION_NOTES_PREFIX = "notes-for-question:";
 const ALL_NOTES_PREFIX = "all-notes";
 
-export function getAllNotesWithQuestionID() {
+export function getAllNotes() {
   const noteList = getNoteList();
 
   const res = [];
@@ -77,6 +77,8 @@ export function saveNoteForQuestion(questionID: string, note: string) {
     `${QUESTION_NOTES_PREFIX}${questionID}`,
     JSON.stringify(arr)
   );
+
+  return noteID;
 }
 
 export function getNote(noteID: string) {
@@ -105,3 +107,8 @@ export function deleteNote(questionID: string, noteID: string) {
   removeFromNoteList(noteID);
   updateNotesForQuestion(questionID, removed);
 }
+
+export const exportForTesting = {
+  ALL_NOTES_PREFIX,
+  QUESTION_NOTES_PREFIX,
+};

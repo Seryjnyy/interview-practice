@@ -1,5 +1,5 @@
 "use client";
-import { getAllNotesWithQuestionID } from "@/lib/noteServices";
+import { getAllNotes } from "@/lib/noteServices";
 import { getAllQuestionsAsMap } from "@/lib/questionService";
 import React, { useEffect, useState } from "react";
 import Note from "../questions/Note";
@@ -18,12 +18,12 @@ export default function Notes() {
   const [questionMap, setQuestionMap] = useState(new Map<string, string>());
 
   useEffect(() => {
-    setNotes(getAllNotesWithQuestionID());
+    setNotes(getAllNotes());
     setQuestionMap(getAllQuestionsAsMap());
   }, []);
 
   const onNoteDeleted = () => {
-    setNotes(getAllNotesWithQuestionID());
+    setNotes(getAllNotes());
     setQuestionMap(getAllQuestionsAsMap());
   };
 
